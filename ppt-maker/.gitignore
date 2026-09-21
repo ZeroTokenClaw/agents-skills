@@ -1,0 +1,15 @@
+node_modules/
+outputs/
+.DS_Store
+.env
+.venv/
+
+# 用户本地测试项目产物
+projects/
+
+# 用户上传的参考素材（通常含大文件）
+materials/*.pdf
+materials/*.doc
+materials/*.docx
+materials/*.ppt
+materials/*.pptx

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Unitree Docs"
+  short_description: "Search and read all official Unitree documentation"
+  default_prompt: "Use $unitree-docs to find the current official Unitree documentation for my question."

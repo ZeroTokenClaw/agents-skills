@@ -1,0 +1,23 @@
+{
+  "skill_name": "unitree-g1-dev-copilot",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to install the RealSense ROS wrapper on a Unitree G1 and use it from ROS2. Walk me through which local G1 docs matter and how I should validate the install.",
+      "expected_output": "Routes the user to the G1 depth-camera, ROS2, and quick-development docs, explains that exact wrapper steps come from official RealSense upstream docs, and ends with validation commands like realsense-viewer and ros2 topic list.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "For a new G1 camera project, should I use the RealSense SDK directly or the RealSense ROS wrapper? Base your answer on the local docs and keep it practical.",
+      "expected_output": "Explains the RealSense camera guidance from the bundled G1 docs, distinguishes SDK versus ROS wrapper tradeoffs, and avoids presenting project-specific camera topics as official defaults.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "My G1 already has custom camera ROS topics. Help me figure out whether they come from the official RealSense wrapper or from an app-specific bridge, and tell me what to check next.",
+      "expected_output": "Explains that project-local camera topics may come from a custom node, avoids treating them as official defaults, and suggests node and topic checks that distinguish wrapper topics from application topics.",
+      "files": []
+    }
+  ]
+}

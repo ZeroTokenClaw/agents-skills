@@ -1,0 +1,88 @@
+# G1 Sidebar Documents
+
+- [关于G1](01_关于G1.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/about_G1
+- [操作指南](02_操作指南.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/Operational_guidance
+- [应用开发](03_应用开发.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/application_development
+- [底层运动开发](04_底层运动开发.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/basic_motion_development
+- [软件服务接口](05_软件服务接口.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/services_interface
+- [高层运动开发](06_高层运动开发.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/high_motion_development
+- [更多例程](07_更多例程.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/more_cases
+- [调试说明](08_调试说明.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/debugging_specification
+- [常见问题](09_常见问题.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/FAQ
+- [常见错误及释义](10_常见错误及释义.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/common_istakes_and_definitions
+- [操作指南 / 快速开始](11_操作指南_快速开始.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/quick_start
+- [操作指南 / 遥控说明](12_操作指南_遥控说明.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/remote_control
+- [操作指南 / 腰部固定件使用说明](13_操作指南_腰部固定件使用说明.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/waist_fastener
+- [操作指南 / 语音助手使用说明](14_操作指南_语音助手使用说明.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/voice_assistant_instructions
+- [操作指南 / 音频播放](15_操作指南_音频播放.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/audio_playback
+- [应用开发 / SDK概述](16_应用开发_SDK概述.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/sdk_overview
+- [应用开发 / 软件架构说明](17_应用开发_软件架构说明.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/architecture_description
+- [应用开发 / 获取SDK](18_应用开发_获取SDK.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/get_sdk
+- [应用开发 / 快速开发](19_应用开发_快速开发.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/quick_development
+- [底层运动开发 / 底层运动参考例程](20_底层运动开发_底层运动参考例程.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/basic_motion_routine
+- [底层运动开发 / 关节电机顺序](21_底层运动开发_关节电机顺序.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/joint_motor_sequence
+- [底层运动开发 / 遥控器数据结构](22_底层运动开发_遥控器数据结构.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/remote_control_data
+- [底层运动开发 / Dex3-1 灵巧手开发](23_底层运动开发_Dex3-1_灵巧手开发.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/dexterous_hand
+- [底层运动开发 / 因时FTP灵巧手](24_底层运动开发_因时FTP灵巧手.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/inspire_ftp_dexterity_hand
+- [底层运动开发 / 因时DFX灵巧手开发](25_底层运动开发_因时DFX灵巧手开发.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/inspire_dfx_dexterous_hand
+- [底层运动开发 / 强脑灵巧手](26_底层运动开发_强脑灵巧手.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/brainco_hand
+- [软件服务接口 / DDS通信接口](27_软件服务接口_DDS通信接口.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/dds_services_interface
+- [软件服务接口 / 设备状态服务接口](28_软件服务接口_设备状态服务接口.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/robot_state_client_interface
+- [软件服务接口 / 底层服务接口](29_软件服务接口_底层服务接口.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/basic_services_interface
+- [软件服务接口 / 高层运动服务接口](30_软件服务接口_高层运动服务接口.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/sport_services_interface
+- [软件服务接口 / 里程计服务接口](31_软件服务接口_里程计服务接口.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/odometer_service_interface
+- [软件服务接口 / 音频灯光服务接口](32_软件服务接口_音频灯光服务接口.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/VuiClient_Service
+- [软件服务接口 / LiDAR服务接口](33_软件服务接口_LiDAR服务接口.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/lidar_services_interface
+- [软件服务接口 / SLAM导航服务接口](34_软件服务接口_SLAM导航服务接口.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/slam_navigation_services_interface
+- [软件服务接口 / 运控切换接口](35_软件服务接口_运控切换接口.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/motion_witcher_service_interface
+- [高层运动开发 / RPC例程](36_高层运动开发_RPC例程.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/rpc_routine
+- [高层运动开发 / 手臂控制例程](37_高层运动开发_手臂控制例程.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/arm_control_routine
+- [高层运动开发 / 手臂动作服务接口](38_高层运动开发_手臂动作服务接口.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/arm_action_interface
+- [更多例程 / RL例程](39_更多例程_RL例程.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/rl_control_routine
+- [更多例程 / ROS2 通信例程](40_更多例程_ROS2_通信例程.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/ros2_communication_routine
+- [更多例程 / DDS通信例程](41_更多例程_DDS通信例程.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/dds_communication_routine
+- [更多例程 / 激光雷达例程](42_更多例程_激光雷达例程.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/lidar_Instructions
+- [更多例程 / 深度相机例程](43_更多例程_深度相机例程.md)
+  - Source: https://support.unitree.com/home/zh/G1_developer/depth_camera_instruction

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Unitree G1"
+  short_description: "G1 humanoid variants, joint map, topics, and APIs"

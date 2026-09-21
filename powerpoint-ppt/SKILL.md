@@ -1,0 +1,104 @@
+---
+name: powerpoint-ppt
+version: "2.0"
+last_updated: 2026-09-08
+tags: [slides, ppt, docs, writing, quality]
+description: "PowerPoint (.pptx) manipulation via MCP server. Use for creating slides, formatting presentations, managing placeholders, adding images, applying templates, or extracting text from .pptx files."
+---
+# PowerPoint Presentation Workflows
+
+> Tech Stack Target / Version: PowerPoint current desktop or web releases and `python-pptx` automation.
+
+Use this skill when a `.pptx` deck is the output and slide composition matters.
+
+- Leverage native parallel subagent dispatch and 200k+ context windows where available.
+
+
+## Current MCP Reality
+
+Presentation MCP tooling is host-dependent. Some clients expose Office presentation tools directly, while others do not. Do not assume stable public tool names. If the current client lacks those tools, use the included local automation script or generate the content structure first and import it into PowerPoint.
+
+## Activation Conditions
+
+Use symptom -> action triggers: when one matches, apply this skill and verify with the protocol below.
+
+- Creating a deck from structured content
+- Applying templates, branding, and slide layouts
+- Updating text, images, or charts inside an existing presentation
+- Extracting slide text for review or translation
+
+## Practical Workflow
+
+1. Confirm whether the client exposes presentation tools.
+2. Prefer template-driven decks over manual one-off slide formatting.
+3. Keep one idea per slide and treat text density as a defect.
+4. Validate the final deck visually before calling it done.
+
+## MCP Fallback – Native Automation
+
+When MCP is unavailable, use native automation: `python-pptx` for `.pptx`, image export or screenshot checks for visual validation, and manual review for animations or speaker notes. Preserve slide order, layouts, theme fonts, media, notes, and aspect ratio, then reopen or render the deck before claiming success.
+
+<!-- MCP:START -->
+
+<!-- PORTABILITY:START -->
+## Cross-Client Portability
+
+This skill is written to stay usable across GitHub Copilot, Claude Code, and Codex.
+
+- GitHub Copilot: keep the folder in a Copilot-visible skill path or wrap the
+  workflow in project instructions when folder discovery is unavailable.
+- Claude Code: keep the folder in a local skills directory or a compatible plugin source.
+- Codex: install or sync the folder into
+  `$CODEX_HOME/skills/powerpoint-ppt` and restart Codex after major changes.
+
+<!-- PORTABILITY:END -->
+
+## MCP Availability And Fallback
+
+Preferred MCP Server: PowerPoint MCP
+
+- Fallback prompt: "Use the PowerPoint Presentation Workflows skill without MCP. Follow the documented local or manual fallback, show the selected tool surface, and report the verification evidence."
+- Use `python-pptx`, PowerPoint desktop, or a scriptable slide generator when the MCP surface is unavailable.
+- Render the final deck and manually verify layout, overflow, and speaker-facing notes before delivery.
+- Do not claim an MCP operation was used when the active host does not expose it.
+
+<!-- MCP:END -->
+
+## Anti-Patterns
+
+- Writing for the author instead of the reader: It bakes in unstated context and leaves the actual audience unsure what to do next.
+- Skipping concrete examples or commands: Abstract guidance is easy to approve and hard to apply correctly.
+- Letting links, screenshots, or versions drift: Polished formatting does not help if the instructions are no longer true.
+
+## Verification Protocol
+
+Before claiming "skill applied successfully":
+
+1. Pass/fail: The Powerpoint Ppt artifact type, target format, and required output fidelity are stated before editing.
+2. Pass/fail: MCP availability is checked and the native automation fallback path is named when MCP is absent.
+3. Pass/fail: The produced file or formula is opened, parsed, rendered, or otherwise validated locally.
+4. Pressure-test scenario: Apply the workflow to a file with formatting, metadata, or conversion edge cases and verify nothing important is lost.
+5. Success metric: Zero unverified document claims; the artifact itself is the evidence.
+
+## Deck Checklist
+
+- [ ] Title slide is present
+- [ ] Slide layouts are consistent
+- [ ] Fonts and colors match the template
+- [ ] Images are high-resolution and not stretched
+- [ ] Final slides were reviewed in slideshow size, not just as raw XML or text
+
+## References & Resources
+
+### Scripts
+- [PPT Automation Script](./scripts/ppt-automation.py) - Local fallback for building or updating presentation content
+
+### Examples
+- [Presentation Examples](./examples/presentation-examples.md) - Example deck structures and content patterns
+
+## Related Skills
+
+- [documentation-authoring](../documentation-authoring/SKILL.md): Use it when the workflow also needs drafting structured technical or product documents.
+- [documentation-patterns](../documentation-patterns/SKILL.md): Use it when the workflow also needs reusable documentation structures and templates.
+- [documentation-quality](../documentation-quality/SKILL.md): Use it when the workflow also needs documentation review standards and quality gates.
+- [documentation-verification](../documentation-verification/SKILL.md): Use it when the workflow also needs final documentation validation before publishing.

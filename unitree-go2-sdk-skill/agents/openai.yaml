@@ -1,0 +1,4 @@
+interface:
+  display_name: "Unitree GO2 SDK"
+  short_description: "GO2 EDU bringup, DDS, safety, and ROS 2 integration"
+  default_prompt: "Use $unitree-go2-sdk-skill to review GO2 EDU Humble bringup, DDS, and motion safety before we touch the robot."

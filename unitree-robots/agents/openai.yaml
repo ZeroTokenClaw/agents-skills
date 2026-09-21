@@ -1,0 +1,3 @@
+interface:
+  display_name: "Unitree Robots"
+  short_description: "Pick the right Unitree SDK, repo, and network setup"

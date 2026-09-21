@@ -1,0 +1,36 @@
+{
+  "name": "unitree-robot",
+  "version": "2.1.0",
+  "description": "Control mobile robots via OpenClaw. Supports quadrupeds, bipedals, wheeled, drones. Includes Insight9 camera and TinyNav navigation.",
+  "author": "LooperRobotics",
+  "license": "MIT",
+  "homepage": "https://github.com/LooperRobotics/OpenClaw-Robotics",
+  "keywords": [
+    "robotics",
+    "mobile-robot",
+    "quadruped", 
+    "bipedal",
+    "humanoid",
+    "drone",
+    "uav",
+    "wheeled",
+    "insight9",
+    "tinynav",
+    "embodied-ai",
+    "openclaw"
+  ],
+  "openclaw": {
+    "emoji": "🤖",
+    "requires": {
+      "python": ">=3.8",
+      "pip": ["numpy"]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:LooperRobotics/OpenClaw-Robotics.git"
+  },
+  "publish": {
+    "registry": "https://github.com/LooperRobotics/OpenClaw-Robotics"
+  }
+}

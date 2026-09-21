@@ -1,0 +1,303 @@
+[
+  {
+    "section": "",
+    "sidebar_title": "关于G1",
+    "title": "部件名称",
+    "url": "https://support.unitree.com/home/zh/G1_developer/about_G1",
+    "file": "01_关于G1.md"
+  },
+  {
+    "section": "",
+    "sidebar_title": "操作指南",
+    "title": "操作指南",
+    "url": "https://support.unitree.com/home/zh/G1_developer/Operational_guidance",
+    "file": "02_操作指南.md"
+  },
+  {
+    "section": "",
+    "sidebar_title": "应用开发",
+    "title": "应用开发",
+    "url": "https://support.unitree.com/home/zh/G1_developer/application_development",
+    "file": "03_应用开发.md"
+  },
+  {
+    "section": "",
+    "sidebar_title": "底层运动开发",
+    "title": "底层运动开发",
+    "url": "https://support.unitree.com/home/zh/G1_developer/basic_motion_development",
+    "file": "04_底层运动开发.md"
+  },
+  {
+    "section": "",
+    "sidebar_title": "软件服务接口",
+    "title": "软件服务接口",
+    "url": "https://support.unitree.com/home/zh/G1_developer/services_interface",
+    "file": "05_软件服务接口.md"
+  },
+  {
+    "section": "",
+    "sidebar_title": "高层运动开发",
+    "title": "高层运动开发",
+    "url": "https://support.unitree.com/home/zh/G1_developer/high_motion_development",
+    "file": "06_高层运动开发.md"
+  },
+  {
+    "section": "",
+    "sidebar_title": "更多例程",
+    "title": "更多例程",
+    "url": "https://support.unitree.com/home/zh/G1_developer/more_cases",
+    "file": "07_更多例程.md"
+  },
+  {
+    "section": "",
+    "sidebar_title": "调试说明",
+    "title": "调试说明",
+    "url": "https://support.unitree.com/home/zh/G1_developer/debugging_specification",
+    "file": "08_调试说明.md"
+  },
+  {
+    "section": "",
+    "sidebar_title": "常见问题",
+    "title": "G1 是否支持拓展坞？",
+    "url": "https://support.unitree.com/home/zh/G1_developer/FAQ",
+    "file": "09_常见问题.md"
+  },
+  {
+    "section": "",
+    "sidebar_title": "常见错误及释义",
+    "title": "常见错误及释义",
+    "url": "https://support.unitree.com/home/zh/G1_developer/common_istakes_and_definitions",
+    "file": "10_常见错误及释义.md"
+  },
+  {
+    "section": "操作指南",
+    "sidebar_title": "快速开始",
+    "title": "教学视频",
+    "url": "https://support.unitree.com/home/zh/G1_developer/quick_start",
+    "file": "11_操作指南_快速开始.md"
+  },
+  {
+    "section": "操作指南",
+    "sidebar_title": "遥控说明",
+    "title": "使用手册",
+    "url": "https://support.unitree.com/home/zh/G1_developer/remote_control",
+    "file": "12_操作指南_遥控说明.md"
+  },
+  {
+    "section": "操作指南",
+    "sidebar_title": "腰部固定件使用说明",
+    "title": "腰部固定件背景介绍",
+    "url": "https://support.unitree.com/home/zh/G1_developer/waist_fastener",
+    "file": "13_操作指南_腰部固定件使用说明.md"
+  },
+  {
+    "section": "操作指南",
+    "sidebar_title": "语音助手使用说明",
+    "title": "模式说明",
+    "url": "https://support.unitree.com/home/zh/G1_developer/voice_assistant_instructions",
+    "file": "14_操作指南_语音助手使用说明.md"
+  },
+  {
+    "section": "操作指南",
+    "sidebar_title": "音频播放",
+    "title": "G1-音频播放使用方法",
+    "url": "https://support.unitree.com/home/zh/G1_developer/audio_playback",
+    "file": "15_操作指南_音频播放.md"
+  },
+  {
+    "section": "应用开发",
+    "sidebar_title": "SDK概述",
+    "title": "SDK概述",
+    "url": "https://support.unitree.com/home/zh/G1_developer/sdk_overview",
+    "file": "16_应用开发_SDK概述.md"
+  },
+  {
+    "section": "应用开发",
+    "sidebar_title": "软件架构说明",
+    "title": "系统架构图",
+    "url": "https://support.unitree.com/home/zh/G1_developer/architecture_description",
+    "file": "17_应用开发_软件架构说明.md"
+  },
+  {
+    "section": "应用开发",
+    "sidebar_title": "获取SDK",
+    "title": "SDK 介绍",
+    "url": "https://support.unitree.com/home/zh/G1_developer/get_sdk",
+    "file": "18_应用开发_获取SDK.md"
+  },
+  {
+    "section": "应用开发",
+    "sidebar_title": "快速开发",
+    "title": "环境依赖",
+    "url": "https://support.unitree.com/home/zh/G1_developer/quick_development",
+    "file": "19_应用开发_快速开发.md"
+  },
+  {
+    "section": "底层运动开发",
+    "sidebar_title": "底层运动参考例程",
+    "title": "G1 机器人踝关节控制模式",
+    "url": "https://support.unitree.com/home/zh/G1_developer/basic_motion_routine",
+    "file": "20_底层运动开发_底层运动参考例程.md"
+  },
+  {
+    "section": "底层运动开发",
+    "sidebar_title": "关节电机顺序",
+    "title": "Dex3-1 关节电机顺序",
+    "url": "https://support.unitree.com/home/zh/G1_developer/joint_motor_sequence",
+    "file": "21_底层运动开发_关节电机顺序.md"
+  },
+  {
+    "section": "底层运动开发",
+    "sidebar_title": "遥控器数据结构",
+    "title": "遥控器介绍",
+    "url": "https://support.unitree.com/home/zh/G1_developer/remote_control_data",
+    "file": "22_底层运动开发_遥控器数据结构.md"
+  },
+  {
+    "section": "底层运动开发",
+    "sidebar_title": "Dex3-1 灵巧手开发",
+    "title": "灵巧手介绍",
+    "url": "https://support.unitree.com/home/zh/G1_developer/dexterous_hand",
+    "file": "23_底层运动开发_Dex3-1_灵巧手开发.md"
+  },
+  {
+    "section": "底层运动开发",
+    "sidebar_title": "因时FTP灵巧手",
+    "title": "灵巧手SDK介绍",
+    "url": "https://support.unitree.com/home/zh/G1_developer/inspire_ftp_dexterity_hand",
+    "file": "24_底层运动开发_因时FTP灵巧手.md"
+  },
+  {
+    "section": "底层运动开发",
+    "sidebar_title": "因时DFX灵巧手开发",
+    "title": "DFX 灵巧手介绍",
+    "url": "https://support.unitree.com/home/zh/G1_developer/inspire_dfx_dexterous_hand",
+    "file": "25_底层运动开发_因时DFX灵巧手开发.md"
+  },
+  {
+    "section": "底层运动开发",
+    "sidebar_title": "强脑灵巧手",
+    "title": "强脑灵巧手",
+    "url": "https://support.unitree.com/home/zh/G1_developer/brainco_hand",
+    "file": "26_底层运动开发_强脑灵巧手.md"
+  },
+  {
+    "section": "软件服务接口",
+    "sidebar_title": "DDS通信接口",
+    "title": "Unitree SDK 介绍",
+    "url": "https://support.unitree.com/home/zh/G1_developer/dds_services_interface",
+    "file": "27_软件服务接口_DDS通信接口.md"
+  },
+  {
+    "section": "软件服务接口",
+    "sidebar_title": "设备状态服务接口",
+    "title": "RobotStateClient 类",
+    "url": "https://support.unitree.com/home/zh/G1_developer/robot_state_client_interface",
+    "file": "28_软件服务接口_设备状态服务接口.md"
+  },
+  {
+    "section": "软件服务接口",
+    "sidebar_title": "底层服务接口",
+    "title": "接口说明",
+    "url": "https://support.unitree.com/home/zh/G1_developer/basic_services_interface",
+    "file": "29_软件服务接口_底层服务接口.md"
+  },
+  {
+    "section": "软件服务接口",
+    "sidebar_title": "高层运动服务接口",
+    "title": "高层运动服务接口",
+    "url": "https://support.unitree.com/home/zh/G1_developer/sport_services_interface",
+    "file": "30_软件服务接口_高层运动服务接口.md"
+  },
+  {
+    "section": "软件服务接口",
+    "sidebar_title": "里程计服务接口",
+    "title": "软件服务版本要求",
+    "url": "https://support.unitree.com/home/zh/G1_developer/odometer_service_interface",
+    "file": "31_软件服务接口_里程计服务接口.md"
+  },
+  {
+    "section": "软件服务接口",
+    "sidebar_title": "音频灯光服务接口",
+    "title": "介绍",
+    "url": "https://support.unitree.com/home/zh/G1_developer/VuiClient_Service",
+    "file": "32_软件服务接口_音频灯光服务接口.md"
+  },
+  {
+    "section": "软件服务接口",
+    "sidebar_title": "LiDAR服务接口",
+    "title": "雷达服务接口",
+    "url": "https://support.unitree.com/home/zh/G1_developer/lidar_services_interface",
+    "file": "33_软件服务接口_LiDAR服务接口.md"
+  },
+  {
+    "section": "软件服务接口",
+    "sidebar_title": "SLAM导航服务接口",
+    "title": "SLAM 导航服务接口",
+    "url": "https://support.unitree.com/home/zh/G1_developer/slam_navigation_services_interface",
+    "file": "34_软件服务接口_SLAM导航服务接口.md"
+  },
+  {
+    "section": "软件服务接口",
+    "sidebar_title": "运控切换接口",
+    "title": "MotionSwitcherClient 类",
+    "url": "https://support.unitree.com/home/zh/G1_developer/motion_witcher_service_interface",
+    "file": "35_软件服务接口_运控切换接口.md"
+  },
+  {
+    "section": "高层运动开发",
+    "sidebar_title": "RPC例程",
+    "title": "RPC例程",
+    "url": "https://support.unitree.com/home/zh/G1_developer/rpc_routine",
+    "file": "36_高层运动开发_RPC例程.md"
+  },
+  {
+    "section": "高层运动开发",
+    "sidebar_title": "手臂控制例程",
+    "title": "例程解析",
+    "url": "https://support.unitree.com/home/zh/G1_developer/arm_control_routine",
+    "file": "37_高层运动开发_手臂控制例程.md"
+  },
+  {
+    "section": "高层运动开发",
+    "sidebar_title": "手臂动作服务接口",
+    "title": "手臂动作服务接口",
+    "url": "https://support.unitree.com/home/zh/G1_developer/arm_action_interface",
+    "file": "38_高层运动开发_手臂动作服务接口.md"
+  },
+  {
+    "section": "更多例程",
+    "sidebar_title": "RL例程",
+    "title": "硬件准备",
+    "url": "https://support.unitree.com/home/zh/G1_developer/rl_control_routine",
+    "file": "39_更多例程_RL例程.md"
+  },
+  {
+    "section": "更多例程",
+    "sidebar_title": "ROS2 通信例程",
+    "title": "说明",
+    "url": "https://support.unitree.com/home/zh/G1_developer/ros2_communication_routine",
+    "file": "40_更多例程_ROS2_通信例程.md"
+  },
+  {
+    "section": "更多例程",
+    "sidebar_title": "DDS通信例程",
+    "title": "消息发布示例",
+    "url": "https://support.unitree.com/home/zh/G1_developer/dds_communication_routine",
+    "file": "41_更多例程_DDS通信例程.md"
+  },
+  {
+    "section": "更多例程",
+    "sidebar_title": "激光雷达例程",
+    "title": "一、G1机器人雷达介绍与官方资料获取",
+    "url": "https://support.unitree.com/home/zh/G1_developer/lidar_Instructions",
+    "file": "42_更多例程_激光雷达例程.md"
+  },
+  {
+    "section": "更多例程",
+    "sidebar_title": "深度相机例程",
+    "title": "一、G1机器人深度相机介绍与官方资料获取",
+    "url": "https://support.unitree.com/home/zh/G1_developer/depth_camera_instruction",
+    "file": "43_更多例程_深度相机例程.md"
+  }
+]
