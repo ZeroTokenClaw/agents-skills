@@ -1,6 +1,10 @@
 # agents-skills
 
-Cursor / Agent Skills 完整备份仓库。
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Skills](https://img.shields.io/badge/skills-303-blue.svg)](./SKILLS.md)
+[![GitHub](https://img.shields.io/badge/GitHub-ZeroTokenClaw%2Fagents--skills-181717?logo=github)](https://github.com/ZeroTokenClaw/agents-skills)
+
+**开源**的 Cursor / Agent Skills 合集与备份镜像。
 
 对应本机目录：`~/.agents/skills`（Windows：`%USERPROFILE%\.agents\skills`）。
 
@@ -8,8 +12,27 @@ Cursor / Agent Skills 完整备份仓库。
 | --- | --- |
 | 维护账号 | [ZeroTokenClaw](https://github.com/ZeroTokenClaw) |
 | Skill 数量 | **303**（每个子目录含 `SKILL.md`） |
-| 默认可见性 | Private |
+| 可见性 | **Public** |
 | 主分支 | `main` |
+| 仓库许可 | [MIT](./LICENSE)（子目录可另有第三方许可） |
+| 完整目录 | [`SKILLS.md`](./SKILLS.md) |
+
+> Cursor 运行时读取的是本机 skills 目录；本仓库用于备份、分享与跨机同步。
+
+---
+
+## 目录
+
+- [仓库结构](#仓库结构)
+- [快速开始](#快速开始)
+- [在 Cursor 中使用](#在-cursor-中使用)
+- [如何选 Skill](#如何选-skill)
+- [能力域概览](#能力域概览)
+- [Skill 编写约定](#skill-编写约定)
+- [贡献指南](#贡献指南)
+- [许可与归属](#许可与归属)
+- [FAQ](#faq)
+- [相关链接](#相关链接)
 
 ---
 
@@ -18,11 +41,14 @@ Cursor / Agent Skills 完整备份仓库。
 ```text
 agents-skills/
 ├── README.md                 # 本说明
+├── LICENSE                   # 仓库级 MIT + 第三方声明
+├── SKILLS.md                 # 303 个 skill 完整目录
 ├── .gitignore
 ├── practical-skills-index/   # 总路由索引（优先读）
 ├── anbeime-skills-index/     # 中文垂直技能路由
 ├── <skill-name>/
 │   ├── SKILL.md              # 必需：frontmatter + 使用说明
+│   ├── LICENSE*              # 可选：该 skill 自身许可
 │   ├── references/           # 可选：资料、源链接
 │   ├── scripts/              # 可选：辅助脚本
 │   ├── agents/               # 可选：openai.yaml 等
@@ -53,7 +79,21 @@ if (Test-Path $dest) { Rename-Item $dest "skills.bak.$(Get-Date -Format yyyyMMdd
 git clone https://github.com/ZeroTokenClaw/agents-skills.git $dest
 ```
 
-Private 仓库需已登录 GitHub（`gh auth login` 或配置 credential）。
+### 浅克隆（体积更小、更快）
+
+```bash
+git clone --depth 1 https://github.com/ZeroTokenClaw/agents-skills.git ~/.agents/skills
+```
+
+### 只取某一个 skill
+
+```bash
+# 稀疏检出示例：只要 megaflow
+git clone --filter=blob:none --sparse https://github.com/ZeroTokenClaw/agents-skills.git /tmp/agents-skills
+cd /tmp/agents-skills
+git sparse-checkout set megaflow
+cp -r megaflow ~/.agents/skills/
+```
 
 ### 已有本地目录，只拉取更新
 
@@ -62,7 +102,7 @@ cd ~/.agents/skills
 git pull origin main
 ```
 
-### 本地改完后推回 GitHub
+### 本地改完后推回 GitHub（维护者）
 
 ```bash
 cd ~/.agents/skills
@@ -71,6 +111,20 @@ git status
 git commit -m "feat(skills): update ..."
 git push origin main
 ```
+
+---
+
+## 在 Cursor 中使用
+
+1. 确认 skills 落在 Cursor 可发现路径（常见为 `~/.agents/skills` 或 Cursor Agent Stores 同步目录）。
+2. 新开 Agent 对话，直接描述任务；模型会按各 skill 的 `description` 自动匹配。
+3. 也可显式指定：「按 `practical-skills-index` 选型」或「使用 `megaflow` skill」。
+4. 修改 skill 后一般无需重启；若未生效，新开一轮对话即可。
+
+可选发现渠道：
+
+- 本地索引：`practical-skills-index` / `anbeime-skills-index`
+- 社区：`npx skills find <关键词>` · [skills.sh](https://skills.sh/)
 
 ---
 
@@ -87,7 +141,21 @@ git push origin main
 | 产品 / 前端 / 测试工具链 | `product-dev-skills` |
 | 宇树具身能力包 | `unitree-embodied-skills` |
 
-在 Cursor 对话里直接描述任务即可；Agent 会按 description 触发对应 skill。也可显式要求：「按 `practical-skills-index` 选型」。
+### 快捷路由（摘自总索引）
+
+| 任务 | Skill |
+| --- | --- |
+| 网页 / UI | `frontend-design` |
+| React 性能 | `vercel-react-best-practices` |
+| E2E | `playwright-testing` |
+| PPT | `pptx` / `ppt-generator` |
+| 大位移光流 / 点跟踪 | `megaflow` |
+| 人脸签到 + 导览跟随 | `tour-checkin-follow` |
+| 短视频全流程 | `video-creation-suite` |
+| 跨境电商 | `ecommerce-full-pipeline` |
+| 架构交互图 | `archify` |
+
+完整清单见 [`SKILLS.md`](./SKILLS.md)。
 
 ---
 
@@ -125,14 +193,6 @@ git push origin main
 
 `agent-plan-mode` · `agent-team` · `agent-subagent-orchestration` · `agent-spec-creator` · `langgraph-coding-agent` · `spec-driven-development` · `test-driven-development` · `systematic-debugging` · `creating-pr` · `git-workflow-and-versioning` · `parallel-code-review` · `brainstorming` · `writing-plans` · …
 
-完整目录名列表可用：
-
-```bash
-ls ~/.agents/skills
-# 或
-git -C ~/.agents/skills ls-tree -d --name-only HEAD
-```
-
 ---
 
 ## Skill 编写约定
@@ -141,6 +201,7 @@ git -C ~/.agents/skills ls-tree -d --name-only HEAD
 
 1. **目录名** = skill `name`（小写、短横线）
 2. **`SKILL.md` 必需**，YAML frontmatter 至少包含：
+
    ```yaml
    ---
    name: example-skill
@@ -148,20 +209,55 @@ git -C ~/.agents/skills ls-tree -d --name-only HEAD
      何时触发、关键词、适用任务（中英均可）。
    ---
    ```
+
 3. 正文写清：环境依赖、输入输出、命令/API、风险与选型对比
 4. 长资料放 `references/`，可执行逻辑放 `scripts/`
-5. 提交前确认无 `.env`、密钥、本地绝对路径隐私
+5. 若有上游，在 `references/source.md` 写明仓库 / 论文 / License
+6. 提交前确认无 `.env`、密钥、本地绝对路径隐私
 
 可参考：`writing-skills`、`building-skills-from-patterns`。
 
 ---
 
-## 同步与协作说明
+## 贡献指南
 
-- 本仓库是 **Cursor 本地 skills 的镜像**；Cursor 运行时读的是本机 `~/.agents/skills`，不是 GitHub 远程。
-- 改 skill 后需 `git push`，换机用 `git pull` / `clone` 才能对齐。
-- 部分 skill 来自公开技能商店或上游项目（如 anbeime、各类开源模板），保留原 License / 来源说明（见各 skill 内 `LICENSE*`、`references/source.md`）。
-- 聚合分发请自行核对第三方许可；默认保持 **Private**。
+欢迎 PR / Issue：
+
+1. Fork 本仓库并基于 `main` 开分支
+2. 每个 PR 尽量只改一个 skill（或一组强相关 skill）
+3. 更新 `SKILL.md` 时同步检查 description 触发词是否准确
+4. 新增 skill 后更新 [`SKILLS.md`](./SKILLS.md)（或说明由维护者代更）
+5. 不要提交：`node_modules/`、权重文件、数据集、密钥
+
+Issue 建议包含：skill 名、期望行为、复现对话摘要。
+
+---
+
+## 许可与归属
+
+- **仓库级**：MIT（见 [`LICENSE`](./LICENSE)）
+- **子目录**：部分 skill 自带 `LICENSE` / `LICENSE.txt`，以其为准
+- **来源示例**：
+  - 中文垂直合集路由参考 [anbeime/skill](https://github.com/anbeime/skill)
+  - 个别 skill 内 `references/source.md`（如 MegaFlow → [cvg/megaflow](https://github.com/cvg/megaflow)）
+
+再分发子集时请保留对应子目录的许可与归属信息。
+
+---
+
+## FAQ
+
+**Q: Clone 后 Cursor 仍找不到 skill？**  
+A: 确认路径是否为 Cursor 实际扫描目录；必要时在对话中显式点名 skill，或检查 Agent Stores 是否另有副本。
+
+**Q: 可以只装部分 skill 吗？**  
+A: 可以。用稀疏检出，或直接复制单个子目录到 `~/.agents/skills/<name>/`。
+
+**Q: 仓库很大吗？**  
+A: 约数十 MB 量级（以文档与脚本为主）。可用 `--depth 1` 浅克隆。
+
+**Q: 与 skills.sh / 官方商店是什么关系？**  
+A: 本仓库是个人维护的合集镜像，不替代官方商店；可并存，按名称去重即可。
 
 ---
 
@@ -176,6 +272,9 @@ find ~/.agents/skills -mindepth 1 -maxdepth 1 -type d ! -name '.git' | wc -l
 
 # 搜索含某关键词的 skill
 rg -l "MegaFlow|光流" ~/.agents/skills --glob 'SKILL.md'
+
+# 列出全部目录名
+git -C ~/.agents/skills ls-tree -d --name-only HEAD
 ```
 
 ---
@@ -183,5 +282,7 @@ rg -l "MegaFlow|光流" ~/.agents/skills --glob 'SKILL.md'
 ## 相关链接
 
 - 仓库：https://github.com/ZeroTokenClaw/agents-skills
+- 完整目录：[`SKILLS.md`](./SKILLS.md)
 - 总索引：[`practical-skills-index/SKILL.md`](./practical-skills-index/SKILL.md)
 - 中文垂直索引：[`anbeime-skills-index/SKILL.md`](./anbeime-skills-index/SKILL.md)
+- 社区发现：[skills.sh](https://skills.sh/) · [anbeime/skill](https://github.com/anbeime/skill)
