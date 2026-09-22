@@ -1,7 +1,7 @@
 # agents-skills
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Skills](https://img.shields.io/badge/skills-303-blue.svg)](./SKILLS.md)
+[![Skills](https://img.shields.io/badge/skills-305-blue.svg)](./SKILLS.md)
 [![GitHub](https://img.shields.io/badge/GitHub-ZeroTokenClaw%2Fagents--skills-181717?logo=github)](https://github.com/ZeroTokenClaw/agents-skills)
 
 **开源**的 Cursor / Agent Skills 合集与备份镜像。
@@ -11,7 +11,7 @@
 | 项 | 值 |
 | --- | --- |
 | 维护账号 | [ZeroTokenClaw](https://github.com/ZeroTokenClaw) |
-| Skill 数量 | **303**（每个子目录含 `SKILL.md`） |
+| Skill 数量 | **305**（每个子目录含 `SKILL.md`） |
 | 可见性 | **Public** |
 | 主分支 | `main` |
 | 仓库许可 | [MIT](./LICENSE)（子目录可另有第三方许可） |
@@ -150,6 +150,8 @@ git push origin main
 | E2E | `playwright-testing` |
 | PPT | `pptx` / `ppt-generator` |
 | 大位移光流 / 点跟踪 | `megaflow` |
+| 专利交底 / 权利要求 | `patent-drafting` |
+| 软著登记材料 | `software-copyright-cn` |
 | 人脸签到 + 导览跟随 | `tour-checkin-follow` |
 | 短视频全流程 | `video-creation-suite` |
 | 跨境电商 | `ecommerce-full-pipeline` |
@@ -188,6 +190,10 @@ git push origin main
 ### 数据 / 金融 / 办公文档
 
 `data-analysis` · `exploratory-data-analysis` · `financial-modeling` · `dcf-model` · `3-statement-model` · `stock-analysis` · `xlsx` · `docx` · `pdf` · `pptx` · `ppt-generator` · `meeting-notes` · `excel` · …
+
+### 知识产权（专利 / 软著）
+
+`patent-drafting` · `software-copyright-cn` · `contract-review` · `law-to-markdown`
 
 ### Agent 协作与工程流程
 

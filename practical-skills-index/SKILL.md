@@ -5,7 +5,8 @@ description: >-
   web/UI, product, development, algorithms, testing, mapping, or robotics.
   Trigger on 找skill、做什么用哪个、办公、网页、设计、产品、算法、测试、建图、
   宇树、G1、Go2、YOLO、人脸签到、LangGraph、计划模式、子代理、
-  内容创作、短视频、电商、配音、anbeime、MegaFlow、光流、点跟踪。
+  内容创作、短视频、电商、配音、anbeime、MegaFlow、光流、点跟踪、
+  专利、软著、软件著作权、权利要求。
 ---
 
 # 实用 Skills 索引
@@ -49,6 +50,14 @@ Agent 编排：`langgraph-coding-agent`、`agent-plan-mode`、`agent-subagent-or
 | PPT | `pptx` | `powerpoint`、`ppt-maker` |
 | Word / Excel / PDF | `docx`、`xlsx`、`pdf` | `office-automation` |
 | 会议纪要 | `meeting-notes` | — |
+
+## 知识产权（专利 / 软著）
+
+| 任务 | 优先 | 备选 |
+| --- | --- | --- |
+| 发明/实用新型/外观：交底、权利要求、说明书 | **`patent-drafting`** | `contract-review`（权利义务条款） |
+| 中国软著登记材料、源码/说明书鉴别材料 | **`software-copyright-cn`** | — |
+| 合同 / 法条文本 | `contract-review` | `law-to-markdown` |
 
 ## 工程基建
 
@@ -117,5 +126,7 @@ Agent 编排：`langgraph-coding-agent`、`agent-plan-mode`、`agent-subagent-or
 10. LangGraph / 计划模式 / 子代理 → `langgraph-coding-agent`
 11. 内容/短视频/电商/配音 → `anbeime-skills-index`
 12. 大位移光流 / MegaFlow 点跟踪 → `megaflow`
+13. 专利交底/权利要求 → `patent-drafting`
+14. 软著登记材料 → `software-copyright-cn`
 
 更多：`npx skills find <关键词>` · https://skills.sh/ · [anbeime/skill](https://github.com/anbeime/skill)

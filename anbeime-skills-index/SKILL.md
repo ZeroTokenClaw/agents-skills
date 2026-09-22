@@ -5,7 +5,8 @@ description: >-
   publishing, short video, ecommerce, TTS/ASR, digital avatar, arch diagrams,
   multi-agent teams, legal docs, stock analysis, Obsidian, resume. Trigger on
   内容创作、公众号、小红书、短视频、电商、带货、TTS、配音、数字人、架构图、
-  archify、多智能体、合同审核、论文分析、Obsidian、简历、技能商店、anbeime。
+  archify、多智能体、合同审核、专利、软著、软件著作权、论文分析、Obsidian、简历、
+  技能商店、anbeime。
 ---
 
 # anbeime 技能商店路由
@@ -78,6 +79,8 @@ description: >-
 | 四色卡片研报 | `antinet-four-color-cards` / `four-color-cards` | — |
 | 溯源审计 / 安全扫描 | `antinet-provenance`、`antinet-security-scan` | `provenance`、`security-scan` |
 | 合同 / 法条 | `contract-review` | `law-to-markdown` |
+| 专利交底 / 权利要求 / 说明书 | **`patent-drafting`** | — |
+| 软著登记材料 / 鉴别材料 | **`software-copyright-cn`** | — |
 | Obsidian 笔记 | `obsidian-skills-integrated` | `obsidian-markdown`、`obsidian-bases`、`json-canvas` |
 | arXiv / 个股 / 数据叙事 | `paper-analysis-assistant` | `stock-analysis`、`data-storytelling` |
 | 产品经理 / 简历 | `product-manager-toolkit` | `tailored-resume-generator` |

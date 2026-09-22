@@ -1,6 +1,6 @@
 # Skill 完整目录
 
-> 共 **303** 个 skill。由脚本生成；选型请优先读 [`practical-skills-index`](./practical-skills-index/SKILL.md)。
+> 共 **305** 个 skill。由脚本生成；选型请优先读 [practical-skills-index](./practical-skills-index/SKILL.md)。
 
 | Skill | 路径 |
 | --- | --- |
@@ -177,6 +177,7 @@
 | `parallel-code-review` | [parallel-code-review](./parallel-code-review/) |
 | `parallel-exploring` | [parallel-exploring](./parallel-exploring/) |
 | `parallel-test-fixing` | [parallel-test-fixing](./parallel-test-fixing/) |
+| `patent-drafting` | [patent-drafting](./patent-drafting/) |
 | `pdf` | [pdf](./pdf/) |
 | `pdf-extraction` | [pdf-extraction](./pdf-extraction/) |
 | `pdf-processing-pro` | [pdf-processing-pro](./pdf-processing-pro/) |
@@ -236,6 +237,7 @@
 | `setting-up-terraform` | [setting-up-terraform](./setting-up-terraform/) |
 | `shipping-and-launch` | [shipping-and-launch](./shipping-and-launch/) |
 | `slam` | [slam](./slam/) |
+| `software-copyright-cn` | [software-copyright-cn](./software-copyright-cn/) |
 | `source-driven-development` | [source-driven-development](./source-driven-development/) |
 | `spacemit-robot-vision` | [spacemit-robot-vision](./spacemit-robot-vision/) |
 | `spec-driven-development` | [spec-driven-development](./spec-driven-development/) |
