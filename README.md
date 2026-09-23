@@ -43,6 +43,7 @@ agents-skills/
 ├── README.md                 # 本说明
 ├── LICENSE                   # 仓库级 MIT + 第三方声明
 ├── SKILLS.md                 # 303 个 skill 完整目录
+├── cursor-rules/             # 精选 Cursor Rules 镜像（安装到 ~/.cursor/rules）
 ├── .gitignore
 ├── practical-skills-index/   # 总路由索引（优先读）
 ├── anbeime-skills-index/     # 中文垂直技能路由
@@ -120,6 +121,17 @@ git push origin main
 2. 新开 Agent 对话，直接描述任务；模型会按各 skill 的 `description` 自动匹配。
 3. 也可显式指定：「按 `practical-skills-index` 选型」或「使用 `megaflow` skill」。
 4. 修改 skill 后一般无需重启；若未生效，新开一轮对话即可。
+
+### 跨项目 Cursor Rules
+
+仓库内 [`cursor-rules/`](./cursor-rules/) 为精选 `.mdc` 镜像。跨项目生效需安装到用户级目录（非项目 `.cursor/rules`）：
+
+```powershell
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.cursor\rules" | Out-Null
+Copy-Item "$env:USERPROFILE\.agents\skills\cursor-rules\*" "$env:USERPROFILE\.cursor\rules\" -Force
+```
+
+详见 [`cursor-rules/RULES.md`](./cursor-rules/RULES.md)。
 
 可选发现渠道：
 
